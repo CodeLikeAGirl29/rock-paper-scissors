@@ -120,11 +120,6 @@ h1 {
   }
 }
 
-/* Center result text with colors for win/lose */
-#result {
-  min-height: 4rem;
-}
-
 #game-result.win {
   color: green;
 }

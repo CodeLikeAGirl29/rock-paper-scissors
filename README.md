@@ -2,6 +2,8 @@
 
 Welcome to the **Ultimate Rock, Paper, Scissors Showdown!** This isn't just any game—it's your ticket to reliving the classic playground battle, now in digital form. Will you outsmart the computer, or will you taste the bitter defeat of scissors versus rock? Play now and find out!
 
+[![CodeFactor](https://www.codefactor.io/repository/github/codelikeagirl29/rock-paper-scissors/badge)](https://www.codefactor.io/repository/github/codelikeagirl29/rock-paper-scissors)
+
 ## Features 🌟
 
 - **Dynamic Gameplay**: Play against the computer and test your wits.
@@ -41,7 +43,7 @@ Welcome to the **Ultimate Rock, Paper, Scissors Showdown!** This isn't just any 
 
 ## Demo 🎥
 
-Check out the live game here: [Your Deployed Link](#)
+Check out the live game here: [Your Deployed Link](https://my-rock-paper-scissors-js.netlify.app/)
 
 ## Built With ❤️
 
