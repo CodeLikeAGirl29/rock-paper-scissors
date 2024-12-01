@@ -1,0 +1,138 @@
+/* General styles */
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: "Sour Gummy", sans-serif;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(45, 137, 239, 1);
+  color: ghostwhite;
+}
+
+.card {
+  box-shadow: 1px 1px 1px 1px rgba(45, 137, 239, 1);
+}
+
+.card-body {
+  color: ghostwhite;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.choice {
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  color: white;
+  background: #444;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice i {
+  font-size: 2rem;
+}
+
+.choice:hover {
+  background: #666;
+  transform: scale(1.1);
+}
+
+#result {
+  min-height: 4rem;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+#round-result {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.result-win {
+  color: green;
+}
+
+.result-lose {
+  color: red;
+}
+
+#score {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .choices {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .choice {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Center result text with colors for win/lose */
+#result {
+  min-height: 4rem;
+}
+
+#game-result.win {
+  color: green;
+}
+
+#game-result.lose {
+  color: red;
+}
+
+#game-result.tie {
+  color: gray;
+}
