@@ -1,6 +1,16 @@
-// Initialize scores
-let playerScore = 0;
-let computerScore = 0;
+// Initialize scores from localStorage or set defaults
+let playerScore = parseInt(localStorage.getItem("playerScore")) || 0;
+let computerScore = parseInt(localStorage.getItem("computerScore")) || 0;
+
+// Update the displayed scores
+function updateScores() {
+  document.getElementById("player-score").textContent = playerScore;
+  document.getElementById("computer-score").textContent = computerScore;
+
+  // Save scores to localStorage
+  localStorage.setItem("playerScore", playerScore);
+  localStorage.setItem("computerScore", computerScore);
+}
 
 // Get the computer's random choice
 function getComputerChoice() {
@@ -52,6 +62,8 @@ function setupGame() {
       playRound(choice, computerChoice);
     });
   });
+  // Display the initial scores
+  updateScores();
 }
 
 setupGame();
