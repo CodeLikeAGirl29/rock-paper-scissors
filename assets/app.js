@@ -46,12 +46,6 @@ function playRound(playerChoice, computerChoice) {
   updateScores();
 }
 
-// Update the displayed scores
-function updateScores() {
-  document.getElementById("player-score").textContent = playerScore;
-  document.getElementById("computer-score").textContent = computerScore;
-}
-
 // Set up the game with event listeners
 function setupGame() {
   const choices = ["rock", "paper", "scissors"];
@@ -62,6 +56,7 @@ function setupGame() {
       playRound(choice, computerChoice);
     });
   });
+  
   // Display the initial scores
   updateScores();
 }
